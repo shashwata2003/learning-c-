@@ -21,6 +21,19 @@ int main(){
     else {
         cout<<"You are allowed to fill the form. "<<endl;
     }
+    switch (age)
+    {
+    case(55):
+    cout<<"You don't have to give the Physical exam. "<<endl;
+        break;
+    case(50):
+        cout<<"There are some benefits given to you. "<<endl;
+    
+    default:
+    cout<<"There is no Special benefit given to you."<<endl;
+        break;
+    }
+    
 
 
 

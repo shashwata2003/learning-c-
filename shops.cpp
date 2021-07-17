@@ -5,7 +5,7 @@ class shops
 {
 private:
     int itemid[100];
-    int price[100];
+    int price[100];     
     int rownumber[100];
     int counter;
 
@@ -36,8 +36,6 @@ public:
 int main(){
     shops shopone;
     shopone.intcounter();
-    shopone.input();
-    shopone.input();
     shopone.input();
     shopone.display();
 

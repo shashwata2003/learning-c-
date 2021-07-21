@@ -8,7 +8,7 @@ int speacial(int m ){
     return speacial(m-2)+speacial(m-1);}
 int main(){
     int i ;
-    for ( i = 3; i <= 20; i++)
+    for ( i = 3; i <= 35; i++)
     {
         cout<<"The Fibonacci Sequence "<<i<<" is "<<speacial(i)<<endl;
     }

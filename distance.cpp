@@ -1,39 +1,36 @@
 #include<iostream>
-#include <math.h>
+#include<math.h>
 
 using namespace std;
 
-class hello
+class point
 {
 private:
-    int x,y;
+    int a , b; 
+    friend int square(point o1, point o2);
 public:
-
-    void input(void){
+    void input(){
         cout<<"Enter the x coordinate "<<endl;
-        cin>>x;
+        cin>>a;
         cout<<"Enter the y coordinate "<<endl;
-        cin>>y;
+        cin>>b;
     }
-    void work(hello o1 ,hello o2){
-        int a = o1.x - o2.x;
-        int b = o1.y - o2.y;
-        double c = a*a + b*b;
-        sqrt (c);
-        cout<<"Hence the distance is " <<c<<endl; 
-    }
-    
 };
+ 
+int square(point o1 , point o2){
+        int a=o2.a-o1.a;
+        int b=o2.b-o1.b;
+        double c = a*a + b*b;
+        double d = sqrt(c);
+        cout<<"HEnce the distance is "<<d<<endl;
+}
 
 
-
-int main(){
-    hello first,secound;
-    first.input();
-    first.work();
-    secound.input();
-    secound.work();
-
-
+int main(){  
+    point one;
+    one.input();
+    point two;
+    two.input();
+    square(one,two);
 return 0;
 }

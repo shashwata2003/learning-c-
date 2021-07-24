@@ -22,7 +22,7 @@ int square(point o1 , point o2){
         int b=o2.b-o1.b;
         double c = a*a + b*b;
         double d = sqrt(c);
-        cout<<"HEnce the distance is "<<d<<endl;
+        cout<<"HEnce the distance between ("<<o1.a<<","<<o1.b<<") and ("<<o2.a<<","<<o2.b<<") is = "<<d<<endl;
 }
 
 

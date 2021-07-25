@@ -7,7 +7,7 @@ int main(){
     cout<<"The table of six is : "<<endl;
 for ( int b = 0; b < 11; b++)
 {
-    cout<<b*a<<endl;
+    cout<<"6 * "<<b<<" = "<<b*a<<endl;
 }
 
 

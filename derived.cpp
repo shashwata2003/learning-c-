@@ -14,8 +14,8 @@ public:
 
 void base ::getdata(void)
 {
-    data1 = 10;
-    data2 = 20;
+    data1 = 100;
+    data2 = 450;
 };
 
 int base ::setdata1()

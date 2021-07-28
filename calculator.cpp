@@ -22,18 +22,18 @@ protected:
 
 public:
     float a, b;
+    char c;
     void input()
     {
         cout << "Enter the value of a = " << endl;
         cin >> a;
         cout << "Enter the value of b = " << endl;
         cin >> b;
+        cout << "Enter the operator = " << endl;
+        cin >> c;
     }
     void fuction()
     {
-        char c;
-        cout << "Enter the operator = " << endl;
-        cin >> c;
         switch (c)
         {
         case 'a':
@@ -56,25 +56,25 @@ public:
     }
 };
 
-class scientific
+class science
 {
 protected:
     double result1;
 
 public:
     float d;
+    char c;
     void input1()
     {
 
         cout << "Enter the value of  = " << endl;
         cin >> d;
+        cout << "Enter the operation = " << endl;
+        cin >> c;
     }
 
     void function1()
     {
-        char c;
-        cout<<"Enter the operation = "<<endl;
-        cin>>c;
         switch (c)
         {
         case 'l':
@@ -99,6 +99,8 @@ public:
 
 int main()
 {
-    
+    science one;
+    one.input1();
+    one.function1();
     return 0;
 }

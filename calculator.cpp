@@ -98,25 +98,28 @@ public:
 };
 
 class hybride : public simple , public science{
-    public:
-    float a,b;
-    char c;
-    void input2(){
-        cout<<"Enter the value of a = "<<endl;
-        cin>>a;
-        cout<<"Enter the value of b = "<<endl;
-        cin>>b;
-        cout << "Enter the operator = " << endl;
-        cin >> c;
+    
 
-    }    
+        
 };
 
 int main()
-{
+{   
+    cout<<"The following are the operators available: "<<endl;
+    cout<<"a = add"<<endl;
+    cout<<"p = product"<<endl;
+    cout<<"m = minus"<<endl;
+    cout<<"n = division"<<endl;
+    cout<<"t = tan(a)"<<endl;
+    cout<<"s = sin(a)"<<endl;
+    cout<<"c = cos(a)"<<endl;
+    cout<<"l = log(a)"<<endl;
+    
     hybride one;
-    one.input2(a,b)
+    one.input();
     one.fuction();
+    one.input1();
     one.function1();
+   
     return 0;
 }

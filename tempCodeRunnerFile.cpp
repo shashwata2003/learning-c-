@@ -1,1 +1,2 @@
-base2
+float a,b;
+    char c;

@@ -97,10 +97,26 @@ public:
     }
 };
 
+class hybride : public simple , public science{
+    public:
+    float a,b;
+    char c;
+    void input2(){
+        cout<<"Enter the value of a = "<<endl;
+        cin>>a;
+        cout<<"Enter the value of b = "<<endl;
+        cin>>b;
+        cout << "Enter the operator = " << endl;
+        cin >> c;
+
+    }    
+};
+
 int main()
 {
-    science one;
-    one.input1();
+    hybride one;
+    one.input2(a,b)
+    one.fuction();
     one.function1();
     return 0;
 }

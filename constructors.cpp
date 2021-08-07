@@ -46,7 +46,7 @@ class Derived : public base1, public base2{
     }
 };
 int main(){
-    Derived a;
+    Derived a(11,23,34,56);
     a.printdata1();
     a.printdata2();
     a.printdata3();

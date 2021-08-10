@@ -1,2 +1,4 @@
-float a,b;
-    char c;
+ // for (int i = 0; i < size; i++)
+    // {
+    //     ptrtemp++; 
+    // }

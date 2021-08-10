@@ -33,9 +33,20 @@ public:
 
 
 int main(){
-    jeerank one;
-    one.input();
-    one.work();
+    int size=2;
+    jeerank *ptr = new jeerank[size];
+    jeerank *ptrtemp = ptr;
+    for (int i = 0; i < size; i++)
+    {
+        ptr ->input();
+        ptr ->work();
+        ptr++;
+    }
+    // for (int i = 0; i < size; i++)
+    // {
+    //     ptrtemp++; 
+    // }
+    
 
 return 0;
 }

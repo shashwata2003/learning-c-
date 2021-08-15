@@ -30,6 +30,12 @@ class CWHvedio : public CWH{
     }
 };
 
+class CHWtext : public CWH{
+    float words;
+    public:
+    CHWtext()
+}
+
 int main(){
 
 return 0;

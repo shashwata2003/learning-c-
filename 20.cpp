@@ -1,59 +1,36 @@
 #include<iostream>
 #include<string.h>
+
 using namespace std;
 
 class CWH
 {
 protected:
+    string title;
     float rating;
-    string title;
 public:
-    CWH( float r , string s){
-        rating = r;
+    CWH( string s , float r){
         title = s;
+        rating = r;
     }
 
-    virtual void diaplay(){}
+    void display(){}
 };
 
-class CWHvideo : public CWH{
-    float vediolen;
+class CWHvedio : public CWH{
+    float vedlenght;
     public:
-    CWHvideo(float r , string s , float vl):CWH(r , s ){
-            vl = vediolen;
+    CWHvedio( string s , float r , float vl) : CWH(s ,r ){
+        vedlenght = vl;
     }
     void display(){
-        cout<<"The title of the vedio is "<<title<<endl;
-        cout<<"The rating of the vedio is "<<rating<<endl;
-        cout<<"The lengjt of the vedio is "<<vediolen<<endl;
+        cout<<"This the amazing vedio with the title = "<<title<<endl;
+        cout<<"The rating of this video is =  "<<rating<<endl;
+        cout<<"The lenght of the vedio is = "<<vedlenght<<endl;
     }
 };
 
-class CWHtext : public CWH{
-    int  words;
-    public:
-    CWHtext(float r , string s , int wc):CWH(r , s ){
-            wc = words;
-    }
-    void display(){
-        cout<<"The title of the text is "<<title<<endl;
-        cout<<"The rating of the text is "<<rating<<endl;
-        cout<<"The lengjt of the text is "<<words<<endl;
-    }
-};
 int main(){
-    string title;
-    float rating ,vediolen;
-    int word;
-
-    title=" Vedio one ";
-    rating = 4.5;
-    vediolen =17;
-    CWHvideo v1(title,rating, vediolen);
-    
-
-    CWH* tut[2];
-    tut[0]=
 
 return 0;
 }

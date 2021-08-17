@@ -52,17 +52,19 @@ int main(){
     rating=4.9;
     vedlenght=16.56;
     CWHvedio one(title,rating,vedlenght);
+    one.display();
 
     title="Vedio one notes";
     rating=4.3;
     words=450;
     CHWtext two(title,rating,words);
+    two.display();
 
-    CWH*tut[2];
-    tut[0]=&one;
-    tut[1]=&two;
+    // CWH*tut[2];
+    // tut[0]=&one;
+    // tut[1]=&two;
 
-    tut[0]->display();
-    tut[1]->display(); 
+    // tut[0]->display();
+    // tut[1]->display(); 
 return 0;
 }
